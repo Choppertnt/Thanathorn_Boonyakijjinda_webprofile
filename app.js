@@ -19,26 +19,36 @@ window.addEventListener('load', function() {
         url: window.location.href  // URL ที่ผู้ใช้เข้าถึง
     };
 
-    // ส่งข้อมูลไปยัง API ทันที
-    sendEventToServer(event);
+    // เก็บข้อมูลการเข้าถึงเว็บไซต์ใน LocalStorage
+    let events = JSON.parse(localStorage.getItem('events')) || [];
+    events.push(event);
+    localStorage.setItem('events', JSON.stringify(events));
+
+    // ส่งข้อมูลไปยัง API หากต้องการ
+    sendStoredEvents();
 });
 
 // ฟังก์ชันส่งข้อมูลที่เก็บใน LocalStorage ไปยัง API
-function sendEventToServer(event) {
-    fetch('http://localhost:5000/send-event', {  // URL ของ Flask API
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(event)
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.status === 'success') {
-            console.log('Event sent successfully');
-        }
-    })
-    .catch(error => {
-        console.error('Error sending event:', error);
-    });
+function sendStoredEvents() {
+    let events = JSON.parse(localStorage.getItem('events')) || [];
+
+    if (events.length > 0) {
+        fetch('http://localhost:5000/send-event', {  // URL ของ Flask API
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(events)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === 'success') {
+                // ลบข้อมูลหลังจากส่งสำเร็จ
+                localStorage.removeItem('events');
+            }
+        })
+        .catch(error => {
+            console.error('Error sending events:', error);
+        });
+    }
 }
