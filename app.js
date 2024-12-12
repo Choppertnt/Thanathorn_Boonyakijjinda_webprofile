@@ -25,7 +25,7 @@ window.addEventListener('load', function() {
 
 // ฟังก์ชันส่งข้อมูลที่เก็บใน LocalStorage ไปยัง API
 function sendEventToServer(event) {
-    fetch('http://localhost:5000/send-event', {  // URL ของ Flask API
+    fetch('http://172.25.16.1:5000/send-event', {  // URL ของ Flask API
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
