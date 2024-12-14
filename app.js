@@ -33,7 +33,7 @@ function sendStoredEvents() {
     let events = JSON.parse(localStorage.getItem('events')) || [];
 
     if (events.length > 0) {
-        fetch('kafka-project.vercel.app/send-event', {  // URL ของ Flask API
+        fetch('https://kafka-project.vercel.app/send-event', {  // URL ของ Flask API
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
