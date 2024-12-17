@@ -1482,29 +1482,62 @@ footer .credits a {
   color: #fff;
 }
 
-.timeline::after {
-  content: '';
+.timeline {
+  position: relative;
+  margin: 20px auto;
+  padding: 10px 0;
+  width: 100%;
+}
+
+/* Timeline Item */
+.timeline-item {
+  position: relative;
+  padding: 20px 0 20px 40px;
+  margin: 20px 0;
+  border-left: 2px solid #007bff; /* เส้น Timeline สีฟ้า */
+}
+
+/* Icon (วงกลมด้านซ้าย) */
+.timeline-item .timeline-icon {
   position: absolute;
-  width: 4px;
-  background: linear-gradient(to bottom, #4a90e2, #ff5b57);
-  top: 0;
-  bottom: 0;
-  left: 30px;
-  margin-left: -2px;
+  left: -10px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: #007bff;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #007bff;
 }
 
-.timeline-item::before {
-  font-family: 'FontAwesome'; /* ถ้าคุณใช้ไอคอนจาก FontAwesome */
-  content: '\f0c1'; /* ไอคอนของ FontAwesome */
-  font-size: 20px;
-  color: white;
-  background-color: #4a90e2;
-  border: 2px solid #4a90e2;
+/* Content */
+.timeline-item .content {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.content {
-  background: #ffffff;
-  border: 1px solid #e6e6e6;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.timeline-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.timeline-item h4 {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.timeline-item .duration {
+  color: #aaa;
+  font-weight: normal;
+  font-size: 0.9em;
+}
+
+.timeline-item p {
+  font-size: 0.95em;
+  color: #666;
+  line-height: 1.5;
 }
