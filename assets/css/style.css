@@ -1484,11 +1484,11 @@ footer .credits a {
 
 /* ลดช่องว่างระหว่างหัวข้อ */
 .title-box {
-  margin-bottom: 10px; /* ลดระยะห่างด้านล่างของหัวข้อ */
+  margin-bottom: 5px; /* ลดระยะห่างด้านล่างของหัวข้อ */
 }
 
 .title-box .subtitle-a {
-  margin-top: -5px; /* ขยับข้อความ "My experience worked on." ขึ้น */
+  margin-top: -15px; /* ขยับข้อความ "My experience worked on." ขึ้น */
   margin-bottom: 5px;
 }
 
