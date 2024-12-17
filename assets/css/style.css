@@ -1497,6 +1497,15 @@ footer .credits a {
   margin: 20px 0;
 }
 
+.timeline-item .content .duration {
+  font-size: 0.9em; /* ลดขนาดฟอนต์ */
+  font-weight: normal; /* น้ำหนักตัวอักษรเป็นปกติ */
+  color: #666; /* เปลี่ยนสีให้เป็นเทาอ่อน */
+  margin-left: 10px; /* เว้นระยะห่างจากหัวข้อ */
+  display: inline-block; /* จัดให้เป็นบล็อกย่อย */
+}
+
+
 /* เส้น Timeline */
 .timeline-item::before {
   content: "";
