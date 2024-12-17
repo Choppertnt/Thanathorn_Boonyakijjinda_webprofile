@@ -1488,7 +1488,7 @@ footer .credits a {
 .timeline {
   position: relative;
   margin: 20px auto;
-  padding: 10px 0;
+  padding: 0;
   width: 100%;
 }
 
