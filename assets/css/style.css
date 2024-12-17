@@ -1497,12 +1497,17 @@ footer .credits a {
   margin: 20px 0;
 }
 
-.timeline-item .content .duration {
-  font-size: 0.9em; /* ลดขนาดฟอนต์ */
+.timeline-item .content h3 {
+  font-size: 1.5em; /* ขนาดเดิมของหัวข้อ */
+  font-weight: bold; /* ตัวหนา */
+  margin: 0;
+}
+
+.timeline-item .content h3 .duration {
+  font-size: 0.8em; /* ลดขนาดฟอนต์สำหรับ duration */
   font-weight: normal; /* น้ำหนักตัวอักษรเป็นปกติ */
-  color: #666; /* เปลี่ยนสีให้เป็นเทาอ่อน */
-  margin-left: 10px; /* เว้นระยะห่างจากหัวข้อ */
-  display: inline-block; /* จัดให้เป็นบล็อกย่อย */
+  color: #666; /* เปลี่ยนสีให้ดูจางลง */
+  margin-left: 10px; /* เพิ่มช่องว่างด้านซ้าย */
 }
 
 
