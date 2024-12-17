@@ -1487,16 +1487,15 @@ footer .credits a {
 
 .timeline {
   position: relative;
-  margin: 20px auto;
+  margin: 10px auto;
   padding: 0;
-  width: 100%;
 }
 
 /* Timeline Item */
 .timeline-item {
   position: relative;
   padding-left: 50px; /* ระยะห่างจากเส้น Timeline */
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .timeline-item .content h3 {
