@@ -1616,3 +1616,37 @@ footer .credits a {
   color: #666;
   line-height: 1.5;
 }
+
+
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f9ff;
+  border: 2px solid #d1e7fd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item {
+  text-align: center;
+  margin: 10px;
+}
+
+.skill-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.title-box-3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title-left {
+  color: #0078d4;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
