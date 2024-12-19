@@ -838,6 +838,9 @@ a:hover {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+.about-me {
+  text-align: right;
+}
 
 .about-mf .about-img {
   margin-bottom: 2rem;
