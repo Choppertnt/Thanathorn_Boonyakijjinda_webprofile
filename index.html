@@ -227,91 +227,73 @@
     </section>
 
 
-    <section id="Experience" class="services-mf pt-5 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">Experience</h3>
-              <p class="subtitle-a">
-                My experience worked on.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-icon"></div>
-            <div class="content">
-              <h3>A Lot tech <span class="duration">(Aug 2024-Jan 2025)</span></h3>
-              <p><h4>Data Analyst</h4>
-              </p>
-              <p>
-                My responsibilities encompass extracting data from PDF files through web scraping,
-                designing and maintaining efficient ETL pipelines, automating daily data workflows, 
-                and delivering impactful reports and visualizations. These efforts empower 
-                the marketing team with strategic insights to drive informed decision-making.
-              </p>
-              <p><h4>Key Skill : <span class="duration">Bs4 , request , gcp api, Jupyterlab , Colab , SQL , PowerBI</span></h4>
-            </div>
-          </div>
-      <!-- Bluebik Vulcan Experience -->
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-icon"></div>
-          <div class="content">
-            <h3>Bluebik vulcan <span class="duration">(Jan 2025-current)</span></h3>
-            <h4>Data Engineer</h4>
-            <ul>
-              <li>
-                <h4>Cost Optimization</h4>
-              I have been commissioned to optimize costs 
-              in Google Cloud Storage (GCS), To reduce storage costs on GCS by analyzing data usage patterns and 
-              implementing storage policies that align with data access frequency.
-              <ul>
-                <li> <strong>Storage Usage Patterns </strong> Reviewed object access logs to identify inactive (cold) data ,
-                  Monitored storage growth and usage trends using Cloud Monitoring and Logging
-                </li>
-                <li> <strong>Data by Access Frequency </strong> Categorized data into Hot (frequently accessed), 
-                  Cold (rarely accessed), and Archived (long-term retention)
-                </li>
-                <li> <strong>Lifecycle Policies </strong> Configured GCS lifecycle rules to automatically move 
-                  or delete files based on access time
-                </li>
-                <li> <strong>Redundant or Unused Files </strong> Wrote Python scripts to detect and delete duplicate or obsolete files,
-                  Coordinated with data owners to validate file necessity
-                </li>
-              </ul>
-              </li>
-              <li>
-                <h4>Vector Search</h4>
-                To build a scalable and intelligent search system that combines full-text search and vector search (Hybrid Search) 
-                using Google Cloud Spanner as the backend, with data pipeline orchestration via Dagster.
-                <ul>
-                  <li>
-                    <strong>Built a Dagster Data Pipeline</strong> Developed a pipeline to extract data from CMS-stored tables in BigQuery,
-                    Transformed and loaded the data into Google Cloud Spanner
-                  </li>
-                  <li>
-                    <strong>Spanner Schema for Hybrid Search </strong> Defined schema to store both text fields and vector embeddings (index , partitions),
-                    Ensured data consistency and optimized schema for hybrid querying 
-                  </li>
-                  <li> <strong>Full-text and Vector Search  </strong> Enabled full-text indexing within Spanner ,
-                    Integrated vector similarity search using approximate nearest neighbor (ANN) techniques
-                  </li>
-                  <li> <strong>Hybrid Search Logic in App Layer</strong> Combined full-text and vector search results into a unified ranking system,
-                    Built an API layer to expose the search functionality to client applications
-                  </li>
-                </ul>
-              </li>
-            <h4>Key
-               Skill : <span class="duration">GCP, GCS, GKE, Dagster, Datahub, Bigquery , Spanner, VectorSearch, Full-TextSearch</span></h4>
-          </div>
+<section id="Experience" class="services-mf pt-5 route">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="title-box text-center">
+          <h3 class="title-a">Experience</h3>
+          <p class="subtitle-a">My experience worked on.</p>
+          <div class="line-mf"></div>
         </div>
       </div>
     </div>
-    </section>
+
+    <!-- Timeline Start -->
+    <div class="timeline">
+
+      <!-- A Lot Tech Experience -->
+      <div class="timeline-item">
+        <div class="timeline-icon"></div>
+        <div class="content">
+          <h3>A Lot tech <span class="duration">(Aug 2024-Jan 2025)</span></h3>
+          <h4>Data Analyst</h4>
+          <p>
+            My responsibilities encompass extracting data from PDF files through web scraping,
+            designing and maintaining efficient ETL pipelines, automating daily data workflows, 
+            and delivering impactful reports and visualizations. These efforts empower 
+            the marketing team with strategic insights to drive informed decision-making.
+          </p>
+          <h4>Key Skill: <span class="duration">Bs4, request, GCP API, JupyterLab, Colab, SQL, PowerBI</span></h4>
+        </div>
+      </div>
+
+      <!-- Bluebik Vulcan Experience -->
+      <div class="timeline-item">
+        <div class="timeline-icon"></div>
+        <div class="content">
+          <h3>Bluebik Vulcan <span class="duration">(Jan 2025 - current)</span></h3>
+          <h4>Data Engineer</h4>
+          <ul>
+            <li>
+              <h4>Cost Optimization</h4>
+              I have been commissioned to optimize costs in Google Cloud Storage (GCS), to reduce storage costs by analyzing data usage patterns and implementing storage policies that align with data access frequency.
+              <ul>
+                <li><strong>Storage Usage Patterns:</strong> Reviewed object access logs to identify inactive (cold) data, monitored storage growth and usage trends using Cloud Monitoring and Logging.</li>
+                <li><strong>Data by Access Frequency:</strong> Categorized data into Hot (frequently accessed), Cold (rarely accessed), and Archived (long-term retention).</li>
+                <li><strong>Lifecycle Policies:</strong> Configured GCS lifecycle rules to automatically move or delete files based on access time.</li>
+                <li><strong>Redundant or Unused Files:</strong> Wrote Python scripts to detect and delete duplicate or obsolete files, coordinated with data owners to validate file necessity.</li>
+              </ul>
+            </li>
+            <li>
+              <h4>Vector Search</h4>
+              Built a scalable and intelligent search system that combines full-text search and vector search (Hybrid Search) using Google Cloud Spanner as the backend, with data pipeline orchestration via Dagster.
+              <ul>
+                <li><strong>Built a Dagster Data Pipeline:</strong> Developed a pipeline to extract data from CMS-stored tables in BigQuery, transformed and loaded the data into Google Cloud Spanner.</li>
+                <li><strong>Spanner Schema for Hybrid Search:</strong> Defined schema to store both text fields and vector embeddings (index, partitions), ensured data consistency and optimized schema for hybrid querying.</li>
+                <li><strong>Full-text and Vector Search:</strong> Enabled full-text indexing within Spanner, integrated vector similarity search using approximate nearest neighbor (ANN) techniques.</li>
+                <li><strong>Hybrid Search Logic in App Layer:</strong> Combined full-text and vector search results into a unified ranking system, built an API layer to expose the search functionality to client applications.</li>
+              </ul>
+            </li>
+          </ul>
+          <h4>Key Skill: <span class="duration">GCP, GCS, GKE, Dagster, Datahub, BigQuery, Spanner, VectorSearch, Full-TextSearch</span></h4>
+        </div>
+      </div>
+
+    </div> <!-- End of Timeline -->
+
+  </div>
+</section>
      
     
     <!-- ======= Services Section ======= -->
