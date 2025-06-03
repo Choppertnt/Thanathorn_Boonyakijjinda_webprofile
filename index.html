@@ -102,14 +102,14 @@
                   <div class="row">
                     <div class="col-sm-6 col-md-5">
                       <div class="about-img">
-                        <img src="assets/img/profile2.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                        <img src="assets/img/chopper.jpg" class="img-fluid rounded b-shadow-a" alt="">
                       </div>
                     </div>
                     <div class="col-sm-6 col-md-7">
                       <div class="about-info">
                         <p><span class="title-s">Name: </span> <span>Thanathorn Boonyakijjinda</span></p>
                         <p><span class="title-s">Nickname: </span> <span>Chopper</span></p>
-                        <p><span class="title-s">Age: </span> <span>24</span></p>
+                        <p><span class="title-s">Age: </span> <span>25</span></p>
                         <p><span class="title-s">Job Position: </span> <span>Data Engineer</span></p>
                         <p><span class="title-s">Company: </span> <span>Bluebik Vulcan</span></p>
                         <p><span class="title-s">bachelor's degrees: </span> <span>Thammasat University</span></p>
@@ -156,7 +156,7 @@
                         </div>
                         <p class="lead">
                           May I introduce myself? My name is Thanathorn Boonyakijjinda, but you can call me Chopper.
-                          I was born on 11 April 2000, making me 24 years old. I'm from Thailand and currently living in Ayutthaya.
+                          I was born on 11 April 2000, making me 24 years old. I'm from Thailand and currently living in Bangkok.
                           For my educational background, I graduated from Thammasat University with a bachelor's degree in Electrical Power Engineering with a GPA of 3.58.
                           I have a passion for continuous learning and am always eager to enhance my skills. 
                           I am easygoing and cheerful, which helps me build strong relationships and collaborate effectively with others.
@@ -192,12 +192,13 @@
                 <ul class="skill-list">
                   <li>Python (Google API, bs4 selenium, tkinter, pyinstaller, matplotlib, seaborn, Flask)</li>
                   <li>R program (dplyr, dummies, tidyverse, syuzhet)</li>
-                  <li>Database (PostgreSQL (Trigger, Function), BigQuery, SQLite, MongoDB)</li>
+                  <li>Database (PostgreSQL (Trigger, Function), BigQuery, Spanner, SQLite, MongoDB)</li>
                   <li>Excel (VLookup, Pivot-table, IF, Query, Google Sheets)</li>
                   <li>JavaScripts (APP SCRIPTS)</li>
-                  <li>PowerShell</li>
+                  <li>Docker, Kubernetes</li>
                   <li>GitHub, Vercel</li>
                   <li>ChatGPT</li>
+                  <li>Google cloud platform (GKE, GCS, ETC.)</li>
                 </ul>
               </div>
               <!-- Key Skills Visualization -->
@@ -212,8 +213,8 @@
               <div class="skill-mf">
                 <p class="title-s">Key Skills Tools Of Data</p>
                 <ul class="skill-list">
-                  <li>Data Lake (AWS S3, GCP bucket, MinIO)</li>
-                  <li>Data warehouse (Databricks, Snowflake)</li>
+                  <li>Data Lake (AWS S3, GCS, MinIO)</li>
+                  <li>Data warehouse (Databricks, Snowflake, Bigquery, Spanner)</li>
                   <li>Data pipeline (Fivetran)</li>
                   <li>Data transform (DBT, PySpark)</li>
                   <li>Data Orchestration (Airflow, Dagster)</li>
@@ -261,15 +262,49 @@
           <div class="timeline-icon"></div>
           <div class="content">
             <h3>Bluebik vulcan <span class="duration">(Jan 2025-current)</span></h3>
-            <p><h4>Data Engineer</h4>
-            </p>
-            <p>
-              I am the owner of a Data Engineering project. I have been commissioned to optimize costs 
-              in Google Cloud Storage (GCS), migrate data pipelines using Dagster, and create 
-              data matrices with DataHub. Additionally, I design databases in PostgreSQL and GCP, 
-              including Data Lakes and Data Warehouses, for projects involving vector search.
-            </p>
-            <p><h4>Key Skill : <span class="duration">GCP , GCS , GKE , Dagster , Datahub , Datalake , DataWh ,vector_search</span></h4>
+            <h4>Data Engineer</h4>
+            <ul>
+              <li>
+              I have been commissioned to optimize costs 
+              in Google Cloud Storage (GCS), To reduce storage costs on GCS by analyzing data usage patterns and 
+              implementing storage policies that align with data access frequency.
+              <ul>
+                <li> Analyzed Storage Usage Patterns , Reviewed object access logs to identify inactive (cold) data ,
+                  Monitored storage growth and usage trends using Cloud Monitoring and Logging
+                </li>
+                <li> Classified Data by Access Frequency ,Categorized data into Hot (frequently accessed), 
+                  Cold (rarely accessed), and Archived (long-term retention)
+                </li>
+                <li> Implemented Lifecycle Policies, Configured GCS lifecycle rules to automatically move 
+                  or delete files based on access time
+                </li>
+                <li> Removed Redundant or Unused Files , Wrote Python scripts to detect and delete duplicate or obsolete files,
+                  Coordinated with data owners to validate file necessity
+                </li>
+              </ul>
+              </li>
+              <li>
+                To build a scalable and intelligent search system that combines full-text search and vector search (Hybrid Search) 
+                using Google Cloud Spanner as the backend, with data pipeline orchestration via Dagster.
+                <ul>
+                  <li>
+                    Built a Dagster Data Pipeline , Developed a pipeline to extract data from CMS-stored tables in BigQuery,
+                    Transformed and loaded the data into Google Cloud Spanner
+                  </li>
+                  <li>
+                    Designed Spanner Schema for Hybrid Search , Defined schema to store both text fields and vector embeddings (index , partitions),
+                    Ensured data consistency and optimized schema for hybrid querying 
+                  </li>
+                  <li> Integrated Full-text and Vector Search , Enabled full-text indexing within Spanner ,
+                    Integrated vector similarity search using approximate nearest neighbor (ANN) techniques
+                  </li>
+                  <li> Developed Hybrid Search Logic in App Layer , Combined full-text and vector search results into a unified ranking system,
+                    Built an API layer to expose the search functionality to client applications
+                  </li>
+                </ul>
+              </li>
+            <h4>Key
+               Skill : <span class="duration">GCP, GCS, GKE, Dagster, Datahub, Bigquery , Spanner, VectorSearch, Full-TextSearch</span></h4>
           </div>
         </div>
       </div>
