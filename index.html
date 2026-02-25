@@ -109,11 +109,11 @@
                       <div class="about-info">
                         <p><span class="title-s">Name: </span> <span>Thanathorn Boonyakijjinda</span></p>
                         <p><span class="title-s">Nickname: </span> <span>Chopper</span></p>
-                        <p><span class="title-s">Age: </span> <span>25</span></p>
+                        <p><span class="title-s">Age: </span> <span id="display-age"></span></p>
                         <p><span class="title-s">Job Position: </span> <span>Data Engineer</span></p>
-                        <p><span class="title-s">Company: </span> <span>Bluebik Vulcan</span></p>
+                        <p><span class="title-s">Company: </span> <span>Aware Corporation</span></p>
                         <p><span class="title-s">bachelor's degrees: </span> <span>Thammasat University</span></p>
-                        <p><span class="title-s">GPA: </span> <span>3.58</span></p>
+                        <p><span class="title-s">Experience: </span> <span id="display-experience"></span></p>
                       </div>
                     </div>
                   </div>
@@ -1108,6 +1108,38 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="app.js"></script>
+
+
+  <script>
+  function calculateDuration(startDate) {
+    const start = new Date(startDate);
+    const now = new Date();
+    
+    // คำนวณความต่างเป็นปี (แบบทศนิยม)
+    let years = (now - start) / (1000 * 60 * 60 * 24 * 365.25);
+    return years.toFixed(2); // ปัดเศษทศนิยม 2 ตำแหน่งเหมือนเดิม
+  }
+
+  function calculateAge(birthDate) {
+    const birth = new Date(birthDate);
+    const now = new Date();
+    let age = now.getFullYear() - birth.getFullYear();
+    const m = now.getMonth() - birth.getMonth();
+    if (m < 0 || (m === 0 && now.getDate() < birth.getDate())) {
+        age--;
+    }
+    return age;
+  }
+
+  // --- ใส่ข้อมูลจริงของคุณตรงนี้ ---
+  const myBirthDate = "2000-04-11"; // รูปแบบ YYYY-MM-DD
+  const jobStartDate = "2024-10-16"; // วันที่เริ่มงานครั้งแรก
+
+  // แสดงผลลงหน้าเว็บ
+  document.getElementById('display-age').innerText = calculateAge(myBirthDate);
+  document.getElementById('display-experience').innerText = calculateDuration(jobStartDate);
+</script>
+
 </body>
 
 </html>
