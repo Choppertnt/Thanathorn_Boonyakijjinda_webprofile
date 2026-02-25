@@ -1150,7 +1150,7 @@
     
     // คำนวณความต่างเป็นปี (แบบทศนิยม)
     let years = (now - start) / (1000 * 60 * 60 * 24 * 365.25);
-    return years.toFixed(2); // ปัดเศษทศนิยม 2 ตำแหน่งเหมือนเดิม
+    return years.toFixed(1); // ปัดเศษทศนิยม 2 ตำแหน่งเหมือนเดิม
   }
 
   function calculateAge(birthDate) {
